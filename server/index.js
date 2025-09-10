@@ -8,9 +8,12 @@ const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const JWT_SECRET = process.env.JWT_SECRET || 'your-super-secret-jwt-key';
+const JWT_SECRET = process.env.JWT_SECRET;
+const CORS_ORIGIN = process.env.CORS_ORIGIN || 'https://your-frontend-url.com';
 
-app.use(cors());
+app.use(cors({
+  origin: CORS_ORIGIN
+}));
 app.use(express.json());
 
 const DB_PATH = path.join(__dirname, 'db.json');
