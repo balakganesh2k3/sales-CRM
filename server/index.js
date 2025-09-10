@@ -9,10 +9,11 @@ const { v4: uuidv4 } = require('uuid');
 const app = express();
 const PORT = process.env.PORT || 3001;
 const JWT_SECRET = process.env.JWT_SECRET;
-const CORS_ORIGIN = process.env.CORS_ORIGIN || 'https://your-frontend-url.com';
+const CORS_ORIGIN = process.env.CORS_ORIGIN || 'https://benevolent-twilight-06f4ab.netlify.app/';
 
 app.use(cors({
-  origin: CORS_ORIGIN
+  origin: CORS_ORIGIN,
+  credentials: true
 }));
 app.use(express.json());
 
