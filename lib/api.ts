@@ -1,6 +1,10 @@
 import { authService } from './auth';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://your-railway-app-url.railway.app';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+
+if (!API_BASE_URL) {
+  console.error('API_BASE_URL is not defined');
+}
 
 interface Lead {
   id: string;

@@ -8,12 +8,12 @@ const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const JWT_SECRET = process.env.JWT_SECRET || '464e8537bed280e84add5336d26e3f13c8d1a25b47e1c029f826c31bdcab19eee989083997a833e9ca298fefebf61c10e718e544c66c3c1eeb8362b922c88f4b';
-const CORS_ORIGIN = process.env.CORS_ORIGIN || '*'; // Allow all origins in development
+const JWT_SECRET = process.env.JWT_SECRET || 'your-default-secret';
+const CORS_ORIGIN = process.env.CORS_ORIGIN || 'https://benevolent-twilight-06f4ab.netlify.app/'; // Allow all origins in development
 
-// Configure CORS
+// Configure CORS properly
 app.use(cors({
-  origin: CORS_ORIGIN,
+  origin: [CORS_ORIGIN, 'http://localhost:3000'], // Allow both Netlify and local development
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
