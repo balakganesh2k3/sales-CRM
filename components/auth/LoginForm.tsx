@@ -163,15 +163,7 @@ const LoginForm: React.FC = () => {
                 </div>
               )}
 
-              {isLogin && (
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-sm text-blue-800 mb-2"><strong>Demo Credentials:</strong></p>
-                  <div className="text-xs space-y-1 text-blue-700">
-                    <p><strong>Sales Rep:</strong> rep@example.com / password123</p>
-                    <p><strong>Manager:</strong> manager@example.com / password123</p>
-                  </div>
-                </div>
-              )}
+              
             </CardContent>
 
             <CardFooter className="space-y-4">

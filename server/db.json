@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "rep@example.com",
+      "password": "$2a$10$rQeX1Uzt3/06bENWvfNgj.Hu5E9dGvNnbW5RGoIxwC0McTcxSap06",
+      "name": "John Rep",
+      "role": "rep"
+    },
+    {
+      "id": "2",
+      "email": "manager@example.com",
+      "password": "$2a$10$S/ZL3mr5oJCgRTm5Rwj2ouk4DUL.0jzksNQeuF6lEymfC0JqMmHAG",
+      "name": "Jane Manager",
+      "role": "manager"
+    },
+    {
+      "id": "33bb9737-127d-48bc-b0a1-209b00e0e0c9",
+      "email": "ganeshk202003@gmail.com",
+      "password": "$2a$10$OlZzZDbcYQnGEqmTepwEGeabVq5ZP4Zq9oMDBYKht9BDUN6duhSCy",
+      "name": "ganesh",
+      "role": "rep"
+    },
+    {
+      "id": "eafd8801-b200-4624-b9a3-d696664b987b",
+      "email": "balak20112003@gmail.com",
+      "password": "$2a$10$USMo.UPZUhGatX.eNw0lUu3rJrcQhBk45Q1Csi6j/mc1vG8evTEhG",
+      "name": "bala",
+      "role": "manager"
+    }
+  ],
+  "leads": [
+    {
+      "id": "1",
+      "name": "Acme Corporation",
+      "email": "contact@acme.com",
+      "phone": "+1-555-0123",
+      "company": "Acme Corporation",
+      "status": "new",
+      "assignedTo": "1",
+      "createdAt": "2025-09-10T15:26:04.858Z",
+      "updatedAt": "2025-09-10T15:26:04.859Z"
+    },
+    {
+      "id": "2",
+      "name": "Tech Solutions Inc",
+      "email": "info@techsolutions.com",
+      "phone": "+1-555-0456",
+      "company": "Tech Solutions Inc",
+      "status": "contacted",
+      "assignedTo": "1",
+      "createdAt": "2025-09-10T15:26:04.859Z",
+      "updatedAt": "2025-09-10T15:26:04.859Z"
+    },
+    {
+      "id": "177686d8-3e8d-4af1-bbab-1830339ec3bc",
+      "name": "Bala ganesh K",
+      "email": "ganeshk202003@gmail.com",
+      "phone": "6369996387",
+      "company": "gangsta",
+      "status": "contacted",
+      "assignedTo": "33bb9737-127d-48bc-b0a1-209b00e0e0c9",
+      "createdAt": "2025-09-10T15:28:52.496Z",
+      "updatedAt": "2025-09-10T15:28:52.496Z"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "1",
+      "name": "Acme Software License",
+      "company": "Acme Corporation",
+      "value": 50000,
+      "stage": "proposal",
+      "probability": 75,
+      "expectedCloseDate": "2024-03-15",
+      "assignedTo": "1",
+      "leadId": null,
+      "createdAt": "2025-09-10T15:26:04.859Z",
+      "updatedAt": "2025-09-10T15:26:04.859Z"
+    },
+    {
+      "id": "e914c6a6-c765-4bb3-9816-019380581bf5",
+      "name": "Portfolio.git",
+      "company": "gangsta",
+      "value": 646790,
+      "stage": "proposal",
+      "probability": 50,
+      "expectedCloseDate": "2025-10-10",
+      "assignedTo": "33bb9737-127d-48bc-b0a1-209b00e0e0c9",
+      "leadId": null,
+      "createdAt": "2025-09-10T15:29:12.250Z",
+      "updatedAt": "2025-09-10T15:29:12.250Z"
+    }
+  ]
+}

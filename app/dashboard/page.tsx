@@ -3,7 +3,7 @@
 import React from 'react';
 import ProtectedRoute from '@/components/layout/ProtectedRoute';
 import Navbar from '@/components/layout/Navbar';
-import DashboardStats from '@/components/dashboard/DashboardStats';
+import DashboardStats from '@/components/layout/DashboardStats';
 
 const DashboardPage: React.FC = () => {
   return (

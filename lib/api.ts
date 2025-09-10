@@ -29,9 +29,11 @@ interface Opportunity {
 }
 
 interface DashboardStats {
+  userName: string;
   totalLeads: number;
-  totalOpportunities: number;
+  openOpportunities: number;
   totalOpportunityValue: number;
+  totalRevenue: number;
   leadsByStatus: Record<string, number>;
   opportunitiesByStage: Record<string, number>;
 }
